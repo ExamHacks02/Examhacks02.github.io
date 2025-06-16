@@ -1,165 +1,973 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exam Hacks</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Google AdSense Initialization -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8048403963151365"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 Exam Hacks - Proven Strategies to Score 90%+ | ExamHacks</title>
+  <meta name="description" content="Free CBSE/ICSE exam hacks, cheat sheets, and study plans used by toppers. Download our 90%+ scoring blueprint for Class 10 students.">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Class 10 Exam Hacks - Score 90%+ with These Tricks">
+  <meta property="og:description" content="Proven strategies used by CBSE toppers. Get free cheat sheets and study planners.">
+  <meta property="og:image" content="https://examhacks02.github.io/assets/social-preview.jpg">
+  <meta property="og:url" content="https://examhacks02.github.io/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8048403963151365" crossorigin="anonymous"></script>
 
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e40af;
+      --accent: #f59e0b;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --success: #10b981;
+    }
+    
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      box-sizing: border-box;
     }
-
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+    
+    /* Header Styles */
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
     }
-
+    
     .logo-container {
       display: flex;
       align-items: center;
+      gap: 10px;
     }
-
+    
     .logo {
       height: 40px;
       width: auto;
-      margin-right: 10px;
     }
-
+    
     .site-brand {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
-
+    
     .site-title {
+      font-family: 'Roboto Slab', serif;
       font-size: 1.5rem;
       font-weight: 700;
       margin: 0;
     }
-
+    
     .tagline {
-      font-size: 0.9rem;
-      font-style: italic;
+      font-size: 0.8rem;
+      opacity: 0.9;
       margin-top: 2px;
-      color: #ccc;
     }
-
+    
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
     nav a {
       color: white;
-      margin-left: 1rem;
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      padding: 0.5rem 0;
+      position: relative;
     }
-
-    .ticker-wrapper {
-      background: #1abc9c;
-      overflow: hidden;
-      white-space: nowrap;
-      padding: 0.5rem;
+    
+    nav a:hover {
+      color: var(--accent);
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
       color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    
+    /* Ticker Styles */
+    .ticker-wrapper {
+      background: var(--accent);
+      color: var(--dark);
+      padding: 0.5rem 0;
+      overflow: hidden;
+    }
+    
+    .ticker-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+    
+    .ticker-label {
+      background: var(--dark);
+      color: white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
       font-weight: 600;
+      font-size: 0.8rem;
+      white-space: nowrap;
     }
-
+    
     .ticker {
-      display: inline-block;
-      animation: ticker-scroll 20s linear infinite;
+      flex-grow: 1;
+      overflow: hidden;
     }
-
+    
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: ticker-scroll 25s linear infinite;
+      padding-left: 100%;
+    }
+    
+    .ticker-content:hover {
+      animation-play-state: paused;
+    }
+    
     @keyframes ticker-scroll {
       0% {
-        transform: translateX(100%);
+        transform: translateX(0);
       }
       100% {
         transform: translateX(-100%);
       }
     }
-
+    
+    /* Hero Section */
     .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #ecf0f1;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    footer {
-      background-color: #2c3e50;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 5rem 2rem;
+      position: relative;
+    }
+    
+    .hero-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background-color: var(--accent);
+      color: var(--dark);
+    }
+    
+    .btn-primary:hover {
+      background-color: #e69009;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+    
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    /* Features Section */
+    .features {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .section-title h2 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2rem;
+      color: var(--dark);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--accent);
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .feature-content {
+      padding: 1.5rem;
+    }
+    
+    .feature-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    
+    .feature-content p {
+      color: #64748b;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    
+    .feature-link {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .feature-link:hover {
+      text-decoration: underline;
+    }
+    
+    /* Lead Magnet Section */
+    .lead-magnet {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .lead-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .lead-magnet h2 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .lead-magnet p {
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+    
+    .lead-box {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .lead-box h3 {
+      color: var(--dark);
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+      font-weight: 500;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    }
+    
+    .btn-block {
+      display: block;
+      width: 100%;
+    }
+    
+    .small-text {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin-top: 1rem;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+      padding: 4rem 2rem;
+      background-color: #f1f5f9;
+    }
+    
+    .testimonials-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+    
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-size: 4rem;
+      color: rgba(37, 99, 235, 0.1);
+      font-family: serif;
+      line-height: 1;
+    }
+    
+    .testimonial-content {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1rem;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .author-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .author-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .author-info p {
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    
+    /* Blog Preview */
+    .blog-preview {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .blog-card img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .blog-content {
+      padding: 1.5rem;
+    }
+    
+    .blog-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-content p {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+    
+    /* Ad Section */
+    .ad-section {
+      padding: 2rem;
+      text-align: center;
+      background-color: #f1f5f9;
+    }
+    
+    .ad-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 3rem 2rem 1.5rem;
+    }
+    
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    
+    .footer-col h3 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .footer-col h3::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: var(--accent);
+    }
+    
+    .footer-col ul {
+      list-style: none;
+    }
+    
+    .footer-col li {
+      margin-bottom: 0.75rem;
+    }
+    
+    .footer-col a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: #334155;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background-color: var(--accent);
+    }
+    
+    .copyright {
+      text-align: center;
+      padding-top: 2rem;
       margin-top: 2rem;
+      border-top: 1px solid #334155;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      nav {
+        margin-top: 1rem;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        display: none;
+      }
+      
+      nav.active {
+        display: flex;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <div class="logo-container">
-      <img src="assets/logo.png" alt="Exam Hacks Logo" class="logo" />
-      <div class="site-brand">
-        <span class="site-title">Exam Hacks</span>
-        <span class="tagline">Smart tips for smarter exam</span>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Exam Hacks Logo" class="logo">
+        <div class="site-brand">
+          <h1 class="site-title">Exam Hacks</h1>
+          <span class="tagline">Smart strategies for academic success</span>
+        </div>
       </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      
+      <nav id="mainNav">
+        <a href="/">Home</a>
+        <a href="/blog">Study Hacks</a>
+        <a href="/resources">Free Resources</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/post1.html">Blog</a>
-      <a href="/downloads/sample.pdf" target="_blank">Downloads</a>
-    </nav>
   </header>
 
-  <!-- Ticker section -->
+  <!-- Announcement Ticker -->
   <div class="ticker-wrapper">
-    <div class="ticker">
-      <span>🔥 New PDF tips uploaded! &nbsp; 💡 Check out our latest blog on time management! &nbsp; 🎯 Study smarter, not harder!</span>
+    <div class="ticker-container">
+      <span class="ticker-label">HOT</span>
+      <div class="ticker">
+        <div class="ticker-content">
+          🚀 Just released: "Class 10 CBSE Last-Minute Revision Guide" - Download now! • 🎯 New: "90-Day Study Plan for 95%+" - Check resources section • 🔥 Limited time: Free webinar on "Answer Writing Techniques" this Saturday
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Hero section -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to Exam Hacks</h2>
-    <p>Your one-stop destination for smart learning strategies, resources, and exam tips to help you succeed.</p>
+    <div class="hero-container">
+      <h1>Score 90%+ in Class 10 With Proven Exam Hacks</h1>
+      <p>Discover the secret strategies used by CBSE toppers to study smarter, not harder. Get free resources, cheat sheets, and personalized study plans.</p>
+      <div class="cta-buttons">
+        <a href="#lead-magnet" class="btn btn-primary">Get Free Study Kit</a>
+        <a href="/blog" class="btn btn-secondary">Explore Study Hacks</a>
+      </div>
+    </div>
   </section>
 
-  <!-- AdSense unit -->
-  <div style="text-align:center; margin: 2rem 0;">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-8048403963151365"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="section-title">
+      <h2>What You'll Get</h2>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="assets/feature1.jpg" alt="Exam Tips" class="feature-img">
+        <div class="feature-content">
+          <h3>Subject-Specific Strategies</h3>
+          <p>Math shortcuts, Science diagram hacks, SST answer writing techniques - all tailored for Class 10 CBSE/ICSE.</p>
+          <a href="/blog/science-hacks" class="feature-link">Learn more →</a>
+        </div>
+      </div>
+      
+      <div class="feature-card">
+        <img src="assets/feature2.jpg" alt="Study Planner" class="feature-img">
+        <div class="feature-content">
+          <h3>Smart Study Plans</h3>
+          <p>90-day, 30-day, and last-week revision timetables that actually work based on cognitive science.</p>
+          <a href="/resources/planners" class="feature-link">Download now →</a>
+        </div>
+      </div>
+      
+      <div class="feature-card">
+        <img src="assets/feature3.jpg" alt="Mind Maps" class="feature-img">
+        <div class="feature-content">
+          <h3>Memory Techniques</h3>
+          <p>Mnemonics, mind maps, and spaced repetition systems to remember everything effortlessly.</p>
+          <a href="/blog/memory-hacks" class="feature-link">Discover techniques →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Lead Magnet Section -->
+  <section class="lead-magnet" id="lead-magnet">
+    <div class="lead-container">
+      <h2>Get Your Free Class 10 Success Kit</h2>
+      <p>Join 10,000+ students who boosted their scores with our resources</p>
+      
+      <div class="lead-box">
+        <h3>What's Inside:</h3>
+        <ul style="text-align: left; margin-bottom: 1.5rem; color: var(--dark); padding-left: 1.5rem;">
+          <li>📚 Subject-wise cheat sheets (Math formulas, Science diagrams)</li>
+          <li>⏰ 30-Day Smart Study Planner</li>
+          <li>✍️ Answer writing templates for full marks</li>
+          <li>🧠 Memory techniques guide</li>
+        </ul>
+        
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="board">Board (CBSE/ICSE/State)</label>
+            <input type="text" id="board" name="board">
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Get Free Kit Now</button>
+          <p class="small-text">We respect your privacy. Unsubscribe at any time.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonials-container">
+      <div class="section-title">
+        <h2>Success Stories</h2>
+      </div>
+      
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>These exam hacks helped me score 96% in CBSE boards! The science diagram techniques were especially valuable - I got full marks in all diagrams.</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/student1.jpg" alt="Riya" class="author-img">
+            <div class="author-info">
+              <h4>Riya Sharma</h4>
+              <p>96% in CBSE 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>The math shortcuts saved me so much time in the exam. I finished my paper 30 minutes early and had time to recheck. Scored 100 in Math!</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/student2.jpg" alt="Arjun" class="author-img">
+            <div class="author-info">
+              <h4>Arjun Patel</h4>
+              <p>100 in Math, ICSE 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>From 70% in pre-boards to 91% in finals! The last-minute revision strategies made all the difference. Highly recommended!</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/student3.jpg" alt="Priya" class="author-img">
+            <div class="author-info">
+              <h4>Priya Nair</h4>
+              <p>91% in State Board 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview -->
+  <section class="blog-preview">
+    <div class="section-title">
+      <h2>Latest Study Hacks</h2>
+    </div>
+    
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="assets/blog1.jpg" alt="Time Management">
+        <div class="blog-content">
+          <h3>10 Time Management Hacks for Class 10</h3>
+          <p>Learn how toppers manage their study schedule effectively to cover the entire syllabus without stress.</p>
+          <div class="blog-meta">
+            <span>📅 15 May 2024</span>
+            <span>⏱️ 5 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog2.jpg" alt="Science Diagrams">
+        <div class="blog-content">
+          <h3>Science Diagram Mastery Guide</h3>
+          <p>Step-by-step instructions to draw perfect diagrams that impress examiners and score full marks.</p>
+          <div class="blog-meta">
+            <span>📅 8 May 2024</span>
+            <span>⏱️ 7 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog3.jpg" alt="Memory Techniques">
+        <div class="blog-content">
+          <h3>Memory Palaces for History Dates</h3>
+          <p>Ancient technique used by memory champions to remember all important dates effortlessly.</p>
+          <div class="blog-meta">
+            <span>📅 1 May 2024</span>
+            <span>⏱️ 6 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Section -->
+  <section class="ad-section">
+    <div class="ad-container">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8048403963151365"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Exam Hacks. All rights reserved.
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Exam Hacks</h3>
+        <p>Helping Class 10 students score 90%+ with smart strategies since 2023.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Study Hacks</a></li>
+          <li><a href="/resources">Free Resources</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Subjects</h3>
+        <ul>
+          <li><a href="/math">Mathematics</a></li>
+          <li><a href="/science">Science</a></li>
+          <li><a href="/sst">Social Studies</a></li>
+          <li><a href="/english">English</a></li>
+          <li><a href="/hindi">Hindi</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2024 Exam Hacks. All rights reserved.
+    </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // AdSense initialization
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </body>
 </html>
