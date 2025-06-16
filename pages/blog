@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hacks for Class 10 | Proven Strategies to Score 90%+</title>
+  <meta name="description" content="Discover proven study hacks, memory techniques, and exam strategies used by CBSE/ICSE toppers to score 90%+ in Class 10.">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Study Hacks for Class 10 | Score 90%+">
+  <meta property="og:description" content="Proven strategies used by CBSE toppers to ace exams.">
+  <meta property="og:image" content="https://examhacks02.github.io/assets/blog-preview.jpg">
+  <meta property="og:url" content="https://examhacks02.github.io/blog">
+  
+  <!-- Favicon and CSS -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same base styles as index.html */
+    
+    /* Blog-specific styles */
+    .blog-header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .blog-header h1 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-header p {
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    
+    .blog-container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+    
+    .category-filter {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .category-btn {
+      padding: 0.5rem 1rem;
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 50px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .category-btn:hover, .category-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .blog-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .blog-card img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    .blog-content {
+      padding: 1.5rem;
+    }
+    
+    .blog-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-content p {
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background: #e0e7ff;
+      color: var(--primary);
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 3rem;
+    }
+    
+    .page-btn {
+      padding: 0.5rem 1rem;
+      background: white;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .page-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (same as index.html) -->
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Exam Hacks Logo" class="logo">
+        <div class="site-brand">
+          <h1 class="site-title">Exam Hacks</h1>
+          <span class="tagline">Smart strategies for academic success</span>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      
+      <nav id="mainNav">
+        <a href="/">Home</a>
+        <a href="/blog">Study Hacks</a>
+        <a href="/resources">Free Resources</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Blog Header -->
+  <section class="blog-header">
+    <h1>Study Hacks for Class 10</h1>
+    <p>Discover proven strategies, memory techniques, and exam hacks used by CBSE/ICSE toppers to score 90%+</p>
+  </section>
+
+  <!-- Blog Content -->
+  <main class="blog-container">
+    <div class="category-filter">
+      <button class="category-btn active">All</button>
+      <button class="category-btn">Math</button>
+      <button class="category-btn">Science</button>
+      <button class="category-btn">SST</button>
+      <button class="category-btn">English</button>
+      <button class="category-btn">Hindi</button>
+      <button class="category-btn">Memory Techniques</button>
+      <button class="category-btn">Time Management</button>
+    </div>
+    
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img src="assets/blog1.jpg" alt="Time Management">
+        <div class="blog-content">
+          <span class="tag">Time Management</span>
+          <h3>10 Time Management Hacks for Class 10</h3>
+          <p>Learn how toppers manage their study schedule effectively to cover the entire syllabus without stress.</p>
+          <div class="blog-meta">
+            <span>📅 15 May 2024</span>
+            <span>⏱️ 5 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog2.jpg" alt="Science Diagrams">
+        <div class="blog-content">
+          <span class="tag">Science</span>
+          <h3>Science Diagram Mastery Guide</h3>
+          <p>Step-by-step instructions to draw perfect diagrams that impress examiners and score full marks.</p>
+          <div class="blog-meta">
+            <span>📅 8 May 2024</span>
+            <span>⏱️ 7 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog3.jpg" alt="Memory Techniques">
+        <div class="blog-content">
+          <span class="tag">Memory Techniques</span>
+          <h3>Memory Palaces for History Dates</h3>
+          <p>Ancient technique used by memory champions to remember all important dates effortlessly.</p>
+          <div class="blog-meta">
+            <span>📅 1 May 2024</span>
+            <span>⏱️ 6 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog4.jpg" alt="Math Formulas">
+        <div class="blog-content">
+          <span class="tag">Math</span>
+          <h3>Math Formula Shortcuts That Save Time</h3>
+          <p>15 verified shortcuts that help solve problems faster in board exams (approved by CBSE).</p>
+          <div class="blog-meta">
+            <span>📅 24 Apr 2024</span>
+            <span>⏱️ 8 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog5.jpg" alt="Answer Writing">
+        <div class="blog-content">
+          <span class="tag">SST</span>
+          <h3>SST Answer Writing Framework</h3>
+          <p>Exactly how to structure your answers to get maximum marks in Social Studies.</p>
+          <div class="blog-meta">
+            <span>📅 17 Apr 2024</span>
+            <span>⏱️ 5 min read</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-card">
+        <img src="assets/blog6.jpg" alt="Last-Minute Revision">
+        <div class="blog-content">
+          <span class="tag">Time Management</span>
+          <h3>Last-Minute Revision Strategy</h3>
+          <p>What to do when exams are tomorrow and you're not prepared (proven method).</p>
+          <div class="blog-meta">
+            <span>📅 10 Apr 2024</span>
+            <span>⏱️ 4 min read</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <button class="page-btn">← Previous</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">Next →</button>
+    </div>
+  </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    ...
+  </footer>
+
+  <script>
+    // Same JavaScript as index.html
+    document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+      document.getElementById('mainNav').classList.toggle('active');
+    });
+    
+    // Category filter functionality
+    document.querySelectorAll('.category-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelector('.category-btn.active').classList.remove('active');
+        this.classList.add('active');
+        // Here you would typically filter the blog posts
+      });
+    });
+  </script>
+</body>
+</html>
