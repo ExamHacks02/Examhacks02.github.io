@@ -6,6 +6,11 @@
   <title>Exam Hacks</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google AdSense Initialization -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8048403963151365"
+     crossorigin="anonymous"></script>
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -61,11 +66,29 @@
       text-decoration: none;
       font-weight: 600;
     }
-<div class="ticker-wrapper">
-  <div class="ticker">
-    <span>🔥 New PDF tips uploaded! &nbsp; 💡 Check out our latest blog on time management! &nbsp; 🎯 Study smarter, not harder!</span>
-  </div>
-</div>
+
+    .ticker-wrapper {
+      background: #1abc9c;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 0.5rem;
+      color: white;
+      font-weight: 600;
+    }
+
+    .ticker {
+      display: inline-block;
+      animation: ticker-scroll 20s linear infinite;
+    }
+
+    @keyframes ticker-scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
     .hero {
       text-align: center;
@@ -109,10 +132,31 @@
     </nav>
   </header>
 
+  <!-- Ticker section -->
+  <div class="ticker-wrapper">
+    <div class="ticker">
+      <span>🔥 New PDF tips uploaded! &nbsp; 💡 Check out our latest blog on time management! &nbsp; 🎯 Study smarter, not harder!</span>
+    </div>
+  </div>
+
+  <!-- Hero section -->
   <section class="hero">
     <h2>Welcome to Exam Hacks</h2>
     <p>Your one-stop destination for smart learning strategies, resources, and exam tips to help you succeed.</p>
   </section>
+
+  <!-- AdSense unit -->
+  <div style="text-align:center; margin: 2rem 0;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8048403963151365"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
   <footer>
     &copy; 2025 Exam Hacks. All rights reserved.
